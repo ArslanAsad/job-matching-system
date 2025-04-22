@@ -2,9 +2,7 @@
 
 A job matching system that parses resumes, scrapes job listings from LinkedIn and Indeed, and ranks jobs based on relevance to the resume.
 
-# Live Demo
-
-(https://job-scraper-frontend-omega.vercel.app/)
+# [Live Demo](https://job-scraper-frontend-omega.vercel.app/)
 
 ## Features
 
