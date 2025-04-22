@@ -2,6 +2,10 @@
 
 A job matching system that parses resumes, scrapes job listings from LinkedIn and Indeed, and ranks jobs based on relevance to the resume.
 
+# Live Demo
+
+(https://job-scraper-frontend-omega.vercel.app/)
+
 ## Features
 
 - Resume upload and parsing (PDF/DOCX formats)
@@ -10,25 +14,6 @@ A job matching system that parses resumes, scrapes job listings from LinkedIn an
 - Matching algorithm to rank jobs by relevance to resume keywords
 - MongoDB storage for resumes and matched jobs
 - RESTful API for integration with frontends
-
-## System Architecture
-
-```
-+----------------+     +----------------+     +----------------+
-|                |     |                |     |                |
-|  Resume Upload |---->| Keyword        |---->| Job Scraping   |
-|  (Multer)      |     | Extraction     |     | (Puppeteer)    |
-|                |     | (PDF/DOCX)     |     |                |
-+----------------+     +----------------+     +----------------+
-                                               |
-                                               v
-+----------------+     +----------------+     +----------------+
-|                |     |                |     |                |
-| MongoDB        |<----| Job Saving     |<----| Relevance      |
-| (Storage)      |     | & API          |     | Matching       |
-|                |     |                |     |                |
-+----------------+     +----------------+     +----------------+
-```
 
 ## Tech Stack
 
